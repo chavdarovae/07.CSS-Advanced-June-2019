@@ -1,0 +1,26 @@
+.c-banner {
+    width: 500px;
+    background-color: lightblue;
+    padding: 40px 20px 20px 20px;
+}
+
+.c-banner__main {}
+
+.c-banner__thumbnail {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.c-banner__message {
+    margin: 0 0 0 20px;
+    flex: 1;
+}
+
+.c-banner__footer {
+    margin-top: 20px;
+}
+
+.c-banner__footer--right-aligned {
+   justify-content: flex-end;
+}

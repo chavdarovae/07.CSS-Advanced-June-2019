@@ -1,0 +1,30 @@
+.c-site-header {
+   display: flex;
+   flex-flow: row wrap; 
+   min-height: 80px;
+   padding: 0 30px;
+   margin-top: 0;
+   box-shadow: 0 6px 10px 0 rgba(42,57,75,.25);
+   border-bottom-left-radius: 8px;
+   border-bottom-right-radius: 8px;
+   position: absolute;
+   top: 0; left: 50%;
+   transform: translate(-50%, 0);
+   z-index: 10;
+   background-color: #fff;
+}
+
+.c-site-header .c-primary-login-and-signup {
+   align-items: center;
+}
+
+.c-site-header .c-primary-login-and-signup .c-cta {
+   margin-left: 20px;
+   min-height: 50px;
+}
+
+.c-site-header .c-primary-site-logo {
+   width: 120px;
+   display: flex;
+   margin-right: auto;
+}

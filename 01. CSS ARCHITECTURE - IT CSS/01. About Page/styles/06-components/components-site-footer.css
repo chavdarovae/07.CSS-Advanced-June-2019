@@ -1,0 +1,26 @@
+.c-site-footer {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 120px;
+    margin-bottom: 0;
+    padding: 0;
+    border-top: 1px solid rgb(136, 136, 136);
+    background-color: #fff;
+    position: relative;
+}
+
+.c-site-footer .c-primary-site-logo-wrapper {
+    margin-right: auto;
+}
+
+.c-site-footer .c-primary-site-logo {
+    width: 120px;
+    display: flex;
+    margin-right: auto;
+}
+
+.c-site-footer-reserved-rights {
+    color: #E1E1E1;
+    font-size: 14px;
+    margin-left: 10px;
+}

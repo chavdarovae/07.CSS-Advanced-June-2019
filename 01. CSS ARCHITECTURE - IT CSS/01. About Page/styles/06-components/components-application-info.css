@@ -1,0 +1,53 @@
+.c-application-info-wrapper {
+    position: relative;
+}
+
+.c-application-info-wrapper::before, 
+.c-application-info-wrapper::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.c-application-info-wrapper::before {
+    background-image: url('../../images/about-page-hero.jpg');
+    z-index: -2;
+}
+
+.c-application-info-wrapper::after {
+    background: rgba(68, 169, 248, 0.85);
+    z-index: -1;
+}
+
+.c-application-info {
+    color: #fff;
+    padding-top: 160px;
+    padding-bottom: 100px;
+    margin-top: 0;
+
+}
+
+.c-application-info-list li:first-child {
+    padding-right: 40px;
+    border-right: 1px solid #fff;
+}
+
+.c-application-info-list li:last-child {
+    padding-left: 40px;
+}
+
+.c-application-info-list-link {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 40px;
+    background: transparent;
+}
+
+.c-application-info-list-link-white {
+    background-color: #fff;
+    color: #44a9f8;
+}

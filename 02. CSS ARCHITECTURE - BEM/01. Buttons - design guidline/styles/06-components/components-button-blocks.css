@@ -1,0 +1,13 @@
+.c-button-block__container {
+    width: 200px;
+    height: 200px;
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.c-button-block__label {
+    margin: 10px 0 0 0;
+}

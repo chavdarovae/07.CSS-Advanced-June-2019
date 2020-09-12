@@ -1,0 +1,88 @@
+.c-button {
+    border: none;
+    border-radius: 100px;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Lato';
+    font-weight: 900;
+    padding: 12px 24px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.c-button:hover {
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.c-button--primary {
+    background-color: #FFA000;
+    color: white;
+}
+
+.c-button--primary.c-button--pressed {
+    background-color: #FFB401;
+}
+
+.c-button--primary.c-button--disabled,
+.c-button--primary[disabled] {
+    background-color: #D6D6D6;
+}
+
+.c-button--secondary {
+    border: 1px solid #ffa000;
+    background-color: none;
+    border-radius: 50px;
+    color: #ffa000;
+    font-size: 14px;
+    line-height: 16px;
+    
+}
+
+.c-button--secondary:hover {
+    background-color: rgba(255,160,0,0.06);
+}
+
+.c-button--secondary.c-button--pressed {
+    background-color: rgba(255,160,0,0.2);
+}
+
+.c-button--secondary.c-button--disabled {
+    color: #D6D6D6;
+    border-color: #D6D6D6;
+}
+
+.c-button--small {
+    border-radius: 20px;
+    background-color: #ffa000;
+    color: white;
+    padding: 9px 18px;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.c-button--small.c-button--pressed {
+    background-color: #FFB401;
+}
+
+.c-button--small.c-button--disabled {
+    background-color: #D6D6D6;
+}
+
+.c-button--primary.c-button--disabled,
+.c-button--secondary.c-button--disabled,
+.c-button--small.c-button--disabled,
+.c-button--primary[disabled] {
+    box-shadow: none;
+    pointer-events: none;
+}
+
+.c-button--primary.c-button--pressed,
+.c-button--secondary.c-button--pressed,
+.c-button--small.c-button--pressed {
+    box-shadow: none;
+}

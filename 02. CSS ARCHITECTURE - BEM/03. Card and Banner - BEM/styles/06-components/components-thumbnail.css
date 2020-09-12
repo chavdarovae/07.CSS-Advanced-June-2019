@@ -1,0 +1,15 @@
+.c-thumbnail {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.c-thumbnail--large {
+    width: 100px;
+    height: 100px;
+}
+
+.c-thumbnail--tiny {
+    width: 20px;
+    height: 20px;
+}

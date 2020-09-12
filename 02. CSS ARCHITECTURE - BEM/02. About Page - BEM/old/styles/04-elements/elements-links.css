@@ -1,0 +1,10 @@
+a {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #3E9DE1;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

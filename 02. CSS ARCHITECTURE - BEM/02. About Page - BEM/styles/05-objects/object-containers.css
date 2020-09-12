@@ -1,0 +1,27 @@
+.o-column-container {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.o-row-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.o-centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.o-space-around-row-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.o-space-between-row-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
