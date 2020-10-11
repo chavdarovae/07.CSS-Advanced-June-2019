@@ -1,0 +1,113 @@
+.c-card__container {
+  margin: 50px 0;
+}
+
+.c-card__container .cards__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  border-bottom: 10px dotted #DFF4F1;
+}
+
+@media (max-width: 599px) {
+  .c-card__container .cards__wrapper {
+    display: block;
+  }
+}
+
+.c-card__container .cards__wrapper .c-card {
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 599px) {
+  .c-card__container .cards__wrapper .c-card {
+    margin: 20px;
+  }
+}
+
+.c-card__container .cards__wrapper .c-card:hover {
+  cursor: pointer;
+}
+
+.c-card__container .cards__wrapper .c-card .c-card__header {
+  min-height: 160px;
+  color: #fff;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.c-card__container .cards__wrapper .c-card .c-card__header--blue {
+  background: #44A9F8;
+}
+
+.c-card__container .cards__wrapper .c-card .c-card__header--green {
+  background: #41BEAD;
+}
+
+.c-card__container .cards__wrapper .c-card .c-card__header .c-card__title {
+  text-align: center;
+}
+
+.c-card__container .cards__wrapper .c-card .c-card__header .c-card__label {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 4px 8px;
+  width: fit-content;
+  text-transform: uppercase;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.c-card__container .cards__wrapper .c-card .c-card__header .c-card__label--gray {
+  background: #676781;
+}
+
+.c-card__container .cards__wrapper .c-card .c-card__header .c-card__label--violet {
+  background: #9A5DC6;
+}
+
+.c-card__container .cards__wrapper .c-card .c-card__content {
+  text-align: center;
+  padding: 0 10px;
+}
+
+.c-card__container .cards__wrapper .c-card .c-card__content .c-card__info {
+  display: inline-block;
+  width: 40%;
+  margin: 5px 0;
+}
+
+.c-card__container .cards__wrapper .c-card .c-card__footer {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  border-radius: 0px 0px 12px 12px;
+  position: relative;
+}
+
+.c-card__container .cards__wrapper .c-card .c-card__footer::before {
+  content: "";
+  background: #f1f1f1;
+  position: absolute;
+  height: 2px;
+  left: 20px;
+  right: 20px;
+  top: 0;
+}
+
+.c-card__container .cards__wrapper .c-card .c-card__footer .c-card__price {
+  font-family: "Montserrat", sans-serif;
+  color: #FC4C50;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.c-card__container .cards__wrapper .c-card:hover .c-card__content, .c-card__container .cards__wrapper .c-card:hover .c-card__footer {
+  background: #F8F8F8;
+}

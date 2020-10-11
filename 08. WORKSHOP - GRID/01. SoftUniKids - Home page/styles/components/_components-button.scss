@@ -1,0 +1,54 @@
+.btn {
+    border: none;
+    outline: none;
+    border-radius: $btn-bd-rad;
+    box-shadow: $active-btn-shadow;
+    padding: 14px 32px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    background-color: $secondary-800;
+    text-transform: uppercase;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: $secondary-shadow;
+        text-decoration: none;
+    }
+
+    &--inverted {
+        color: $secondary-800;
+        background-color: #fff;
+        font-size: 14px;
+        line-height: 16px;
+        border: 1px solid $secondary-800;
+        box-shadow: none;
+    }
+
+    &--secondary {
+        padding: 10px 22px;
+        font-weight: 800;
+        font-size: 13px;
+        line-height: 16px;
+    }
+}
+
+.text-like-btn {
+    border: 0;
+    padding: 0;
+    background: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    outline: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

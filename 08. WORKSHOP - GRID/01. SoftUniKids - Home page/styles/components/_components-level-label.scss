@@ -1,0 +1,22 @@
+.label-level {
+    border-radius: $minor-bd-rad;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 4px 8px;
+    width: fit-content;
+
+    &--beginner {
+        background-color: $secondary-500;
+    }
+
+    &--intermediate {
+        background-color: $intermediate-level-unknown;
+    }
+
+    &--advanced {
+        background-color: $advanced-level-unknown;
+    }
+}

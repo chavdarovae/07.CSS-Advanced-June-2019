@@ -1,0 +1,98 @@
+@import "../settings/settings-colors.scss";
+@import "../settings/settings-breakpoints.scss";
+@import "../settings/settings-place-holder.scss";
+
+.c-footer__wrpper {
+    border: 1px solid #000;
+    background: $gray-700;
+    height: 312px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    position: relative;
+
+    a:hover {
+        color: $primery-300;
+    }
+
+    &::before {
+        @extend %pseudo;
+        background: $gray-500;
+        height: 12px;
+        width: 100%;
+        position: absolute;
+        top: -12px;
+    }
+
+    .c-footer {
+        position: relative;
+        height: 100%;
+        justify-content: space-between;
+
+        &::before {
+            @extend %pseudo;
+            flex: 0 0 220px;
+            order: -1;
+        }
+
+        &__logo {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        &__content {
+            height: 100%;
+
+            &-title {
+                color: #fff;
+                font-size: 18px;
+                line-height: 22px;
+                font-weight: bold;
+            }
+    
+            &-list {
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: flex-start;
+                list-style: none;
+                padding: 0;
+                max-height: 170px;
+                width: 170px;
+                
+                &--wide {
+                    width: 280px;
+                }
+    
+                li {
+                    margin-bottom: 12px;
+    
+                    a {
+                        text-decoration: none;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: $gray-200;
+                    }
+                }
+            }
+
+            &-social {
+                margin-top: 24px;
+                margin-bottom: 48px;
+                
+                a {
+                    color: $gray-200;
+                }
+
+                a + a {
+                    margin-left: 30px;
+                }
+            }
+    
+            &-rights {
+                color: $gray-500;
+            }
+        }
+
+       
+    }
+}

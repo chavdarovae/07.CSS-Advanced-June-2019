@@ -1,0 +1,27 @@
+.c-level-label {
+    width: fit-content;
+    box-shadow: $primary-shadow;
+    border-radius: $primary-border-rad;
+    padding: 4px 8px;
+    font-size: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    flex-flow: row nowrap;
+
+    &--beginner {
+        background: $blue-800;
+    }
+
+    &--intermediate {
+        background: $violet-500;
+    }
+
+    &--advanced {
+        background: $secondary-900;
+    }
+
+    + span {
+        margin-left: 12px;
+    }
+}

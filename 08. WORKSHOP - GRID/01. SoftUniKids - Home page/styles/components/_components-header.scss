@@ -1,0 +1,37 @@
+.main-header {
+    background-color: #fff;
+    box-shadow: $home-comp-shadow;
+
+    //used to display box-shadow over the next section
+    position: relative;
+    z-index: 1;
+
+    .page-content-wrapper {
+        display: grid;
+        grid-template-columns: max-content 1fr max-content;
+        grid-column-gap: 32px;
+    }
+
+    &__logo-and-arrow {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        grid-column-gap: 16px;
+        align-items: center;
+    }
+
+    &__logo {
+        display: flex; // to wrap the svg icon
+    }
+    
+
+    &__search-and-login {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        grid-column-gap: 32px;
+        align-items: center;
+    }
+
+    &__search {
+        display: flex; // to wrap the svg icon
+    }
+}

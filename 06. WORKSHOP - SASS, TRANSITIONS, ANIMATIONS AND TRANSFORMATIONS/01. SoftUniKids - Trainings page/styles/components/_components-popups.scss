@@ -1,0 +1,58 @@
+.c-popup {
+    position: relative;
+    width: fit-content;
+
+
+    &__triger {
+
+        &:hover {
+            + .c-popup__bubble {
+                opacity: 1;
+                transform: translate(-50%, calc(-100% - 18px)) scale(1) ;
+            }
+        }
+    }
+
+    &__bubble {
+        @include horizontal-center-absolute;
+
+        min-width: 390px;
+        color: $gray-500;
+        position: absolute;
+        transform: translate(-50%, -100%) scale(0);
+        opacity: 0;
+        transition: transform 0.4s, scale 0.5s ease-out;
+        transform-origin: bottom center;
+
+        &::after {
+            @include horizontal-center-absolute;
+
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border-left: 26px solid transparent;
+            border-right: 26px solid transparent;
+            border-top: 16px solid #fff;
+            position: absolute;
+            bottom: -12px;
+        }
+
+        p {
+            padding: 12px;
+            margin: 0;
+        }
+
+        p:first-child {
+            padding-top: 0;
+        }
+
+        p:last-child {
+            padding-bottom: 0;
+        }
+        
+        p + p {
+            border-top: 1px solid $gray-200;
+        }
+    }
+}

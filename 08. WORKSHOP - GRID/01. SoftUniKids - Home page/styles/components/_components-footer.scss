@@ -1,0 +1,83 @@
+.main-footer {
+    background-color: $gray-700;
+    border-top: 12px solid $gray-500;
+    padding: 64px 0;
+    color: #fff;
+
+    a {
+        color: #fff;
+    }
+
+    a:hover {
+        color: $primary-300;
+        text-decoration: none;
+    }
+
+    .page-content-wrapper {
+        display: grid;
+        grid-template-columns: 220px 300px 200px 200px 200px;
+        grid-template-rows: 180px;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    &__icon {
+        width: 220px;
+        height: 403px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translateY(16%);
+    }
+
+    &__list {
+        overflow: hidden;
+
+        li {
+            list-style: none;
+            list-style-position: inside;
+            margin-bottom: 12px;
+        }
+    }
+
+    &__list--kids {
+        grid-column: 2 / 3;
+        padding-bottom: 20px;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: start;
+            justify-content: start;
+            height: 170px;
+        }
+    }
+
+    &__list--trainings {
+        grid-column: 3 / 4;
+    }
+
+    &__list--initiatives {
+        grid-column: 4 / 5;
+    }
+
+    &__list--find-us {
+        grid-column: 5 / 6;
+    }
+
+    &__list-title {
+        margin-bottom: 16px;
+    }
+
+    &__list-img {
+        width: 28px;
+        height: auto;
+        margin-right: 30px;
+    }
+
+    &__rights-reserved {
+        color: $gray-500;
+        margin-top: 35px;
+    }
+}

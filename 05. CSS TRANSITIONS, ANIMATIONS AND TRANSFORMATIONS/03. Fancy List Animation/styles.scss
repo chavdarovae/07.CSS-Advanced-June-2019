@@ -1,0 +1,25 @@
+@import "./styles/settings/_settings-colors.scss";
+@import "./styles/settings/_settings-typography.scss";
+@import "./styles/settings/_settings-place-holder.scss";
+@import "./styles/settings/_settings-breakpoints.scss";
+@import "./styles/settings/_settings-animations.scss";
+@import "./styles/settings/_settings-shadows.scss";
+@import "./styles/settings/_settings-margins.scss";
+@import "./styles/settings/_settings-borders.scss";
+@import "./styles/settings/_settings-mixins.scss";
+
+@import "./styles/generic/_generic-normalize.scss";
+
+
+@import "./styles/objects/_objects-containers.scss";
+
+@import "./styles/components/_components-main.scss";
+@import "./styles/components/_components-list.scss";
+
+
+@import "./styles/utilities/_utilities-centered.scss";
+@import "./styles/utilities/_utilities-hidden.scss";
+@import "./styles/utilities/_utilities-animations.scss";
+@import "./styles/utilities/_utilities-display.scss";
+@import "./styles/utilities/_utilities-positions.scss";
+@import "./styles/utilities/_utilities-flex.scss";

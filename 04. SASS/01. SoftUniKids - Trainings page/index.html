@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/settings/settings-typography.css">
+
+    <link rel="stylesheet" href="./styles/generic/generic-normalize.css">
+
+    <link rel="stylesheet" href="./styles/elements/elements-links.css">
+    <link rel="stylesheet" href="./styles/elements/elements-input-fields.css">
+
+    <link rel="stylesheet" href="./styles/objects/objects-containers.css">
+
+    <link rel="stylesheet" href="./styles/components/components-button.css">
+    <link rel="stylesheet" href="./styles/components/components-card.css">
+    <link rel="stylesheet" href="./styles/components/components-filter.css">
+    <link rel="stylesheet" href="./styles/components/components-footer.css">
+    <link rel="stylesheet" href="./styles/components/components-header.css">
+    <link rel="stylesheet" href="./styles/components/components-navigation.css">
+    <link rel="stylesheet" href="./styles/components/components-program.css">
+    <link rel="stylesheet" href="./styles/components/components-program-card.css">
+    <link rel="stylesheet" href="./styles/components/components-footer.css">
+
+    <link rel="stylesheet" href="./styles/utilities/utilities-centered.css">
+    <link rel="stylesheet" href="./styles/utilities/utilities-hidden.css">
+
+    <title>Trianing Page</title>
+</head>
+
+<body>
+    <header class="c-header">
+        <nav class="c-navbar">
+            <div class="c-navbar__wrapper o-container">
+                <article class="c-navbar__logo">
+                    <img src="./assets/images/Logo.svg" alt="Logo">
+                </article>
+                <ul class="c-navbar__items">
+                    <li class="c-navbar__item"><a href="#">Обучения</a></li>
+                    <li class="c-navbar__item"><a href="#">Събития</a></li>
+                    <li class="c-navbar__item"><a href="#">Преподаватели</a></li>
+                    <li class="c-navbar__item"><a href="#">Блог</a></li>
+                    <li class="c-navbar__item"><a href="#">Контакти</a></li>
+                    <li class="c-navbar__item"><a href="#">Контакти</a></li>
+                    <li class="c-navbar__item"><a href="#"><img src="./assets/icons/Search.png" alt="Search"></a></li>
+                    <button class="c-button c-button--secondary">Вход</button>
+                </ul>
+            </div>
+        </nav>
+        <section class="c-header__info">
+            <div class="o-container o-centered-column">
+                <h1>Обучения</h1>
+                <p>
+                    At dolor amet, enim sit augue donec mauris, ac. Eget leo quam et, morbi. Ut eu hac risus a suscipit
+                    cras sagittis viverra gravida. Lobortis amet imperdiet tincidunt quisque accumsan, porta tellus
+                    commodo at. Augue ullamcorper suspendisse. Sit morbi risus
+                </p>
+            </div>
+        </section>
+    </header>
+
+    <main class="c-main">
+        <section class="c-filter">
+            <div class="c-filter__wrapper o-container">
+                <h4 class="c-filter__title">Филтър:</h4>
+                <label class="c-filter__label">
+                    <img class="c-filter__label__image" src="./assets/icons/level.svg" alt="Level">
+                    <select name="level" id="level">
+                        <option value="level">Ниво</option>
+                        <option value="beginner">Начинаещ</option>
+                        <option value="intermediate">Cредно-напреднал</option>
+                        <option value="advanced">Напреднал</option>
+                    </select>
+                    <img class="c-filter__label__image c-filter__label__image--info" src="./assets/icons/info.svg"
+                        alt="Info">
+                </label>
+                <label class="c-filter__label">
+                    <img class="c-filter__label__image" src="./assets/icons/location.svg" alt="Location">
+                    <select name="location" id="location">
+                        <option value="location">Локация</option>
+                        <option value="sofia">София</option>
+                        <option value="online">Онлайн</option>
+                    </select>
+                </label>
+                <label class="c-filter__label">
+                    <img class="c-filter__label__image" src="./assets/icons/people.svg" alt="suitable-for">
+                    <select name="suitable-for" id="suitable-for">
+                        <option value="suitable-for">Подходящ за</option>
+                        <option value="beginner">Начинаещ</option>
+                        <option value="advanced">Напреднал</option>
+                    </select>
+                </label>
+                <label class="c-filter__label">
+                    <img class="c-filter__label__image" src="./assets/icons/puzzle.svg" alt="type">
+                    <select name="type" id="type">
+                        <option value="type">Вид</option>
+                        <option value="online">Онлайн</option>
+                        <option value="onsite">Присъствено</option>
+                    </select>
+                </label>
+            </div>
+        </section>
+
+        <section class="c-card__container">
+            <div class="cards__wrapper o-container">
+                <article class="c-card">
+                    <header class="c-card__header c-card__header--blue">
+                        <div class="c-card__label c-card__label--gray">
+                            Начинаещ
+                        </div>
+                        <h3 class="c-card__title">Първи стъпки в програмирането</h3>
+                    </header>
+                    <div class="c-card__content">
+                        <div class="c-card__info">
+                            <img src="./assets/icons/play.svg">
+                            <span>16 май 2020</span>
+                        </div>
+                        <div class="c-card__info">
+                            <img src="./assets/icons/time.png">
+                            <span>4 седмици</span>
+                        </div>
+                        <div class="c-card__info">
+                            <img src="./assets/icons/user.svg">
+                            <span>1-3 клас</span>
+                        </div>
+                        <div class="c-card__info">
+                            <img src="./assets/icons/location-icon.svg">
+                            <span>София - жк. Изток</span>
+                        </div>
+
+                    </div>
+                    <div class="c-card__footer o-space-btw-row">
+                        <span class="c-card__price">110 лв.</span>
+                        <button class="c-button c-button--primery">към обучението</button>
+                    </div>
+                </article>
+
+                <article class="c-card">
+                    <header class="c-card__header c-card__header--green">
+                        <div class="c-card__label c-card__label--gray">
+                            Начинаещ
+                        </div>
+                        <h3 class="c-card__title">Първи стъпки в програмирането</h3>
+                    </header>
+                    <div class="c-card__content">
+                        <div class="c-card__info">
+                            <img src="./assets/icons/time.png">
+                            <span>4 седмици</span>
+                        </div>
+                        <div class="c-card__info">
+                            <img src="./assets/icons/user.svg">
+                            <span>2-3 клас</span>
+                        </div>
+                        <div class="c-card__info">
+                            <img src="./assets/icons/location-icon.svg">
+                            <span>Онлайн</span>
+                        </div>
+
+                    </div>
+                    <div class="c-card__footer o-space-btw-row">
+                        <span class="c-card__price">110 лв.</span>
+                        <button class="c-button c-button--primery">към обучението</button>
+                    </div>
+                </article>
+
+                <article class="c-card">
+                    <header class="c-card__header c-card__header--blue">
+                        <div class="c-card__label c-card__label--violet">
+                            Средно напреднал
+                        </div>
+                        <h3 class="c-card__title">Първи стъпки в програмирането</h3>
+                    </header>
+                    <div class="c-card__content">
+                        <div class="c-card__info">
+                            <img src="./assets/icons/time.png">
+                            <span>4 седмици</span>
+                        </div>
+                        <div class="c-card__info">
+                            <img src="./assets/icons/user.svg">
+                            <span>1-3 клас</span>
+                        </div>
+                        <div class="c-card__info">
+                            <img src="./assets/icons/location-icon.svg">
+                            <span>гр. София, SoftUni - жк. Изток</span>
+                        </div>
+
+                    </div>
+                    <div class="c-card__footer o-space-btw-row">
+                        <span class="c-card__price">110 лв.</span>
+                        <button class="c-button c-button--primery">към обучението</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="c-program o-container">
+            <div class="c-program__info">
+                <h1>Учебни програми</h1>
+                <p>At dolor amet, enim sit augue donec mauris, ac. Eget leo quam et, morbi. Ut eu hac risus a suscipit
+                    cras sagittis viverra gravida. Lobortis amet imperdiet tincidunt quisque accumsan, porta tellus
+                    commodo at.
+                </p>
+            </div>
+
+            <div class="c-program-cards o-centered-row">
+
+                <article class="c-program-card c-program-card--blue">
+                    <div class="c-program-card__header o-centered-row">
+                        <img src="./assets/icons/PC.svg">
+                        <h3>Софтуерна програма</h3>
+                    </div>
+                    <div class="c-program-card__content">
+                        At dolor amet, enim sit augue donec mauris, ac. Eget leo quam et, morbi. Ut eu hac risus a
+                        suscipit cras sagittis viverra gravida. Lobortis amet imperdiet tincidunt quisque accumsan,
+                        porta tellus commodo at.
+                    </div>
+                    <div class="c-program-card__footer">
+                        <button class="c-button c-button--primery">виж софтуерна програма</button>
+                    </div>
+                </article>
+
+                <article class="c-program-card c-program-card--green">
+                    <div class="c-program-card__header o-centered-row">
+                        <img src="./assets/icons/hardware.svg">
+                        <h3>Хардуерна програма</h3>
+                    </div>
+                    <div class="c-program-card__content">
+                        At dolor amet, enim sit augue donec mauris, ac. Eget leo quam et, morbi. Ut eu hac risus a
+                        suscipit cras sagittis viverra gravida. Lobortis amet imperdiet tincidunt quisque accumsan,
+                        porta tellus commodo at.
+                    </div>
+                    <div class="c-program-card__footer">
+                        <button class="c-button c-button--primery">виж хардуерна програма</button>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="c-footer__wrpper">
+        <div class="c-footer o-container o-space-btw-row">
+            <div class="c-footer__logo">
+                <img src="./assets/icons/figure.svg">
+            </div>
+
+            <div class="c-footer__content o-start-column">
+                <span class="c-footer__content-title">Softuni Kids</span>
+                <ul class="c-footer__content-list c-footer__content-list--wide" class="c-footer__content-list">
+                    <li><a href="#">Начало</a></li>
+                    <li><a href="#">Летни академии</a></li>
+                    <li><a href="#">Преподаватели</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакти</a></li>
+                    <li><a href="#">Общи условия</a></li>
+                    <li><a href="#">Лични данни</a></li>
+                </ul>
+            </div>
+
+            <div class="c-footer__content o-start-column">
+                <span class="c-footer__content-title">Всички обучения</span>
+                <ul class="c-footer__content-list">
+                    <li><a href="#">Курсове</a></li>
+                    <li><a href="#">Събития</a></li>
+                </ul>
+            </div>
+
+            <div class="c-footer__content o-start-column">
+                <span class="c-footer__content-title">Всички инициативи</span>
+                <ul class="c-footer__content-list">
+                    <li><a href="#">Software University</a></li>
+                    <li><a href="#">SoftUni Digital</a></li>
+                    <li><a href="#">SoftUni Creative</a></li>
+                    <li><a href="#">SoftUni Svetlina</a></li>
+                    <li><a href="#">SoftUni Foundation</a></li>
+                </ul>
+            </div>
+
+            <div class="c-footer__content o-start-column">
+                <span class="c-footer__content-title">Намери ни</span>
+                <div class="c-footer__content-social o-centered-row">
+                    <a href=""><img src="./assets/icons/facebook.svg"></a>
+                    <a href=""><img src="./assets/icons/instagram.svg"></a>
+                </div>
+                <div class="c-footer__content-rights o-start-column">
+                    <span>© 2016-2020 - SoftUni Kids.</span>
+                    <span>All Rights Reserved.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

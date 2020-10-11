@@ -1,0 +1,20 @@
+.list {
+    ul {
+        list-style: none;
+    }
+     
+    li {
+        margin: 10px;
+        opacity: 0;
+    }
+
+    i {
+        margin-right: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+        font-size: 16px;
+    }
+}

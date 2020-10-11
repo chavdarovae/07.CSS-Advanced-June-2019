@@ -1,0 +1,39 @@
+@import '../settings/_settings-colors.scss';
+
+.c-button {
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.20);
+    padding: 10px 22px;
+    text-transform: uppercase;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
+    }
+    
+    &--primery {
+        background: $secondary-color;
+        color: #fff;
+        font-size: 14px;
+
+        // transition: background-color 1s, color 1s ease-out;
+        // transition: all 1s ease-out;
+        // transition-timing-function: ease-out;
+        transition: transform 3s ease-out;
+
+        &:hover {
+            // background-color: white;
+            // color: $secondary-color;
+            transform: translateX(500px);
+        }
+    }
+    
+    &--secondary {
+        background: $secondary-color;
+        color: #fff;
+        font-size: 14px;
+    }
+}
+

@@ -1,0 +1,13 @@
+.button {
+    padding: 5px 15px;
+    outline: 5px solid darkblue;
+    transition: outline-width 0.4s ease-out;
+
+    & + & {
+        margin-left: 10px;
+    }
+
+    &:hover {
+        outline-width: 1px;
+    }
+}

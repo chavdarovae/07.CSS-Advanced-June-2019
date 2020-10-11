@@ -1,0 +1,36 @@
+.c-program-cards .c-program-card {
+  border: 4px solid #000;
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 33px 48px 31px 48px;
+}
+
+.c-program-cards .c-program-card + .c-program-card {
+  margin-left: 32px;
+}
+
+.c-program-cards .c-program-card__header img {
+  margin-right: 32px;
+}
+
+.c-program-cards .c-program-card__content {
+  margin: 25px 0 32px 0;
+}
+
+.c-program-cards .c-program-card--blue {
+  border-color: #44A9F8;
+  background-color: #E3F3FD;
+}
+
+.c-program-cards .c-program-card--blue__header {
+  color: #44A9F8;
+}
+
+.c-program-cards .c-program-card--green {
+  border-color: #00AF9B;
+  background-color: #DFF4F1;
+}
+
+.c-program-cards .c-program-card--green__header {
+  color: #00AF9B;
+}

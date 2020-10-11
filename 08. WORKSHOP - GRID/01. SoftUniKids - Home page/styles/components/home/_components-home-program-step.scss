@@ -1,0 +1,82 @@
+.home-program-step {
+    width: 410px;
+    height: 110px;
+    border-radius: $secondary-bd-rad;
+    box-shadow: $home-comp-shadow;
+    margin-top: 56px;
+    padding: 24px 0;
+    color: #fff;
+    text-align: center;
+    position: relative;
+
+    &--final {
+        width: 615px;
+        height: 110px;
+        padding-top: 24px;
+        margin-bottom: 120px;
+        overflow: visible;
+
+        display: grid;
+        grid-template-columns: 135px 135px 135px 135px;
+        grid-template-rows: min-content 85px;
+        grid-row-gap: 33px;
+        justify-content: space-evenly;
+
+        .label-level {
+            grid-column: 1 / 5;
+            justify-self: center;
+        }
+    }
+
+    &__track {
+        border-radius: $secondary-bd-rad;
+        box-shadow: $home-comp-shadow;
+        margin-bottom: 70px;
+        height: 85px;
+        padding: 0 8px;
+        
+        &--programming {
+            background-color: $blue-400;
+        }
+
+        &--robotics {
+            background-color: $primary-300;
+        }
+    }
+
+    &--programming-beginner {
+        background-color: $blue-400;
+    }
+
+    &--programming-intermediate {
+        background-color: $blue-300;
+    }
+
+    &--programming-advanced {
+        background-color: $blue-100;
+    }
+
+    &--robotics-beginner {
+        background-color: $primary-300;
+    }
+
+    &--robotics-intermediate {
+        background-color: $primary-200;
+    }
+
+    &--robotics-advanced {
+        background-color: $primary-100;
+    }
+
+    &__description {
+        margin-top: 16px;
+    }
+
+    &__arrow {
+        max-width: 26px;
+        max-height: 26px;
+        @extend %pseudo-centered-horizontal;
+        top: -15px;
+        transform: translateY(-100%);
+    }
+}

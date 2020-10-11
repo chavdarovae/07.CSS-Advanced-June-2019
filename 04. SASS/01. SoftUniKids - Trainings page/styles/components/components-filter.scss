@@ -1,0 +1,22 @@
+@import '../settings/settings-colors.scss';
+
+.c-filter {
+    background: $gray-50;
+
+    .c-filter__wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        
+        .c-filter__label__image {
+            position: relative;
+            top: 7px;
+            right: 10px;
+        }
+        
+        .c-filter__label__image--info {
+            left: 8px;
+        }
+    }
+}

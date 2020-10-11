@@ -1,0 +1,116 @@
+@import "../settings/_settings-colors.scss";
+@import "../settings/_settings-breakpoints.scss";
+
+.c-card__container {
+    margin: 50px 0;
+    
+    
+    .cards__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 50px;
+        border-bottom: 10px dotted $primery-50;
+
+        @include for-phone-only {
+            display: block;
+        }
+
+        .c-card {
+            max-width: 400px;
+            border-radius: 12px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12),
+                0 1px 5px 0 rgba(0, 0, 0, 0.2);
+
+            @include for-phone-only {
+                margin: 20px;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            .c-card__header {
+                min-height: 160px;
+                color: #fff;
+                border-radius: 12px 12px 0px 0px;
+
+                &--blue {
+                    background: $blue-400;
+                }
+
+                &--green {
+                    background: $primery-300;
+                }
+
+                .c-card__title {
+                    text-align: center;
+                }
+
+                .c-card__label {
+                    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12),
+                        0 1px 3px 0 rgba(0, 0, 0, 0.2);
+                    border-radius: 4px;
+                    padding: 4px 8px;
+                    width: fit-content;
+                    text-transform: uppercase;
+                    position: relative;
+                    top: 10px;
+                    left: 10px;
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 14px;
+
+                    &--gray {
+                        background: $blue-800;
+                    }
+
+                    &--violet {
+                        background: $violet-500;
+                    }
+                }
+            }
+
+            .c-card__content {
+                text-align: center;
+                padding: 0 10px;
+
+                .c-card__info {
+                    display: inline-block;
+                    width: 40%;
+                    margin: 5px 0;
+                }
+            }
+
+            .c-card__footer {
+                background: #ffffff;
+                border-radius: 12px;
+                padding: 20px;
+                border-radius: 0px 0px 12px 12px;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    background: #f1f1f1;
+                    position: absolute;
+                    height: 2px;
+                    left: 20px;
+                    right: 20px;
+                    top: 0;
+                }
+
+                .c-card__price {
+                    font-family: "Montserrat", sans-serif;
+                    color: $red-500;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+            }
+
+            &:hover .c-card__content,
+            &:hover .c-card__footer {
+                background: $gray-50;
+            }
+        }
+    }
+}

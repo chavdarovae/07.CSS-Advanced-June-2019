@@ -1,0 +1,43 @@
+@import "../settings/_settings-colors.scss";
+@import "../settings/_settings-breakpoints.scss";
+
+.c-program-cards {
+    .c-program-card {
+        border: 4px solid #000;
+        border-radius: 12px;
+        background-color: #fff;
+        padding: 33px 48px 31px 48px;
+
+        & + .c-program-card {
+            margin-left: 32px;
+        }
+
+        &__header {
+            img {
+                margin-right: 32px;
+            }
+        }
+
+        &__content {
+            margin: 25px 0 32px 0;
+        }
+
+        &--blue {
+            border-color: $blue-400;
+            background-color: $blue-50;
+
+            &__header {
+                color: $blue-400;
+            }
+        }
+
+        &--green {
+            border-color: $primery-400;
+            background-color: $primery-50;
+
+            &__header {
+                color: $primery-400;
+            }
+        }
+    }
+}

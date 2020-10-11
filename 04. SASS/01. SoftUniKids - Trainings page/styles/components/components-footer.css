@@ -1,0 +1,95 @@
+.c-footer__wrpper .c-footer::before, .c-footer__wrpper::before {
+  content: "";
+  display: block;
+}
+
+.c-footer__wrpper {
+  border: 1px solid #000;
+  background: #585858;
+  height: 312px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  position: relative;
+}
+
+.c-footer__wrpper a:hover {
+  color: #41BEAD;
+}
+
+.c-footer__wrpper::before {
+  background: #919191;
+  height: 12px;
+  width: 100%;
+  position: absolute;
+  top: -12px;
+}
+
+.c-footer__wrpper .c-footer {
+  position: relative;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.c-footer__wrpper .c-footer::before {
+  flex: 0 0 220px;
+  order: -1;
+}
+
+.c-footer__wrpper .c-footer__logo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.c-footer__wrpper .c-footer__content {
+  height: 100%;
+}
+
+.c-footer__wrpper .c-footer__content-title {
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+}
+
+.c-footer__wrpper .c-footer__content-list {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 0;
+  max-height: 170px;
+  width: 170px;
+}
+
+.c-footer__wrpper .c-footer__content-list--wide {
+  width: 280px;
+}
+
+.c-footer__wrpper .c-footer__content-list li {
+  margin-bottom: 12px;
+}
+
+.c-footer__wrpper .c-footer__content-list li a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+  color: #E6E6E6;
+}
+
+.c-footer__wrpper .c-footer__content-social {
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
+.c-footer__wrpper .c-footer__content-social a {
+  color: #E6E6E6;
+}
+
+.c-footer__wrpper .c-footer__content-social a + a {
+  margin-left: 30px;
+}
+
+.c-footer__wrpper .c-footer__content-rights {
+  color: #919191;
+}

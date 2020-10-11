@@ -1,0 +1,463 @@
+.home-main {
+    display: grid;
+    grid-template-rows: 480px 565px 1180px 485px 170px 505px 330px 500px 480px 730px 1fr;
+    color: $gray-700;
+
+    &__welcome-section {
+        background-image: url("../../../assets/images/welcome-section.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        &::after {
+            background-color: $primary-300;
+            opacity: 0.9;
+            @extend %pseudo-overlay;
+        }
+
+        .page-content-wrapper {
+            color: #fff;
+            position: relative;
+            z-index: 1;
+        }
+
+        &-footer {
+            width: 1192px;
+            height: 153px;
+            background-color: #fff;
+            border-radius: $secondary-bd-rad;
+            box-shadow: $secondary-shadow;
+
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            z-index: 1;
+
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            justify-items: stretch;
+            align-items: center;
+        }
+
+        &-footer-item:first-child {
+            align-self: stretch;
+            border-right: 12px dotted $secondary-800;
+        }
+
+        &-footer-item:not(:first-child) {
+            display: grid;
+            grid-template-rows: 29px 22px;
+            grid-template-columns: 48px auto;
+            grid-row-gap: 6px;
+            grid-column-gap: 24px;
+            justify-content: center;
+            position: relative;
+
+            span {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+
+        &-footer-item:not(:last-child)::after {
+            @extend %pseudo-centered-vertical;
+            right: 0;
+            width: 2px;
+            height: 24px;
+            background-color: $gray-100;
+        }
+
+        &-footer-img {
+            grid-row: 1 / 3;
+        }
+
+        &-footer-number {
+            font-family: "Montserrat";
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+
+    &__about {
+        background-color: $secondary-800;
+        color: #fff;
+        border-top: 10px solid $secondary-600;
+
+        .page-content-wrapper {
+            padding: 210px 0 95px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 110px;
+        }
+
+        &-title {
+            margin-bottom: 24px;
+        }
+
+        &-video {
+            width: 520px;
+            height: 290px;
+            border: 4px solid $primary-300;
+            border-radius: $img-bd-rad;
+            overflow: hidden;
+            position: relative;
+        }
+
+        &-video-play {
+            max-width: 64px;
+            @extend %centered-overlay;
+        }
+    }
+
+    &__programs {
+        background-color: #fff;
+
+        .page-content-wrapper {
+        }
+
+        &-description {
+            max-width: 870px;
+            margin-bottom: 34px;
+
+            h2 {
+                color: $primary-300;
+                text-align: center;
+                margin-bottom: 32px;
+            }
+        }
+
+        &-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &-program {
+            padding: 64px 30px 64px 0;
+            border-bottom: 10px dotted $primary-50;
+
+            + .home-main__programs-program {
+                padding: 64px 0 64px 30px;
+                border-left: 10px dotted $primary-50;
+            }
+
+            p {
+                color: $gray-700;
+                padding: 0 15px;
+            }
+        }
+
+        &-program-title {
+            margin-bottom: 26px;
+
+            &--programming {
+                color: $blue-400;
+            }
+
+            &--robotics {
+                color: $primary-300;
+            }
+        }
+
+        &-program-title-img {
+            width: 32px;
+            margin-right: 24px;
+        }
+    }
+
+    &__design {
+        background-color: #fff;
+
+        .page-content-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-content: center;
+        }
+
+        &-description-title {
+            color: $purple-400;
+            margin-bottom: 24px;
+        }
+
+        &-description-title-img {
+            width: 32px;
+            margin-right: 24px;
+        }
+
+        &-img {
+            width: 540px;
+            height: 290px;
+        }
+    }
+
+    &__trainings {
+        background-color: $primary-300;
+        color: #fff;
+
+        .page-content-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 80px;
+            align-items: center;
+        }
+
+        &-description {
+            h3 {
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    &__skills {
+        background-color: #fff;
+
+        .page-content-wrapper {
+            display: grid;
+            align-content: center;
+            grid-template-rows: min-content min-content min-content;
+            grid-row-gap: 32px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        &-title {
+            color: $primary-300;
+        }
+
+        &-title,
+        &-description {
+            grid-column: 1 / 7;
+            justify-self: center;
+            max-width: 740px;
+            text-align: center;
+        }
+
+        &-item {
+            justify-content: flex-end;
+        }
+
+        &-item-img {
+            max-width: 60%;
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+
+        &-item-title {
+            margin-top: 16px;
+            color: $gray-500;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
+    &__awards {
+        background-color: #fff;
+
+        .page-content-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: min-content 215px min-content;
+            align-content: center;
+            justify-content: space-between;
+        }
+
+        &-title {
+            color: $primary-300;
+            grid-column: 1 / 4;
+            justify-self: center;
+            align-self: center;
+            padding: 24px 0;
+        }
+
+        &-award {
+            overflow: hidden;
+
+            align-self: center;
+        }
+
+        &-award-logo {
+            max-width: 110px;
+            padding: 24px 0;
+            margin-bottom: 24px;
+            position: relative;
+
+            &::after {
+                @extend %pseudo-centered-horizontal;
+                bottom: -3px;
+                width: 96px;
+                height: 3px;
+                background-color: $primary-300;
+            }
+        }
+
+        &-award-description {
+            color: $primary-300;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 12px;
+        }
+
+        &-award-institution {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+
+    &__gallery {
+        background-color: #fff;
+
+        .page-content-wrapper {
+            display: grid;
+            grid-template-columns: 300px 300px 300px 300px;
+            grid-template-rows: min-content 215px min-content;
+            justify-content: space-between;
+            grid-row-gap: 48px;
+            align-content: center;
+        }
+
+        &-title {
+            color: $primary-300;
+            grid-column: 1 / 5;
+            justify-self: center;
+            align-self: center;
+        }
+
+        &-img {
+            overflow: hidden;
+            width: 300px;
+            height: 215px;
+            border-radius: $secondary-bd-rad;
+        }
+
+        &-btn {
+            grid-column: 1 / 5;
+            justify-self: end;
+            align-self: center;
+        }
+    }
+
+    &__testimonials {
+        background-color: $primary-300;
+        color: #fff;
+
+        .page-content-wrapper {
+            padding: 48px 90px;
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            grid-template-rows: min-content min-content min-content min-content;
+            grid-column-gap: 32px;
+        }
+
+        &-img {
+            width: 100%;
+            border-radius: 50%;
+            box-shadow: $secondary-shadow;
+            overflow: hidden;
+
+            grid-row: 1 / 5;
+            grid-column: 1 / 2;
+            align-self: center;
+        }
+
+        &-name {
+            margin-bottom: 6px;
+        }
+
+        &-info {
+            margin-bottom: 8px;
+        }
+
+        &-rating {
+            margin-bottom: 18px;
+            img {
+                width: 20px;
+            }
+        }
+
+        &-content {
+            width: 930px;
+        }
+    }
+
+    &__blog {
+        background-color: $blue-300;
+        border-top: 12px solid $blue-200;;
+        color: #fff;
+
+        .page-content-wrapper {
+            display: grid;
+            grid-template-columns: 300px 300px 300px 300px;
+            grid-template-rows: min-content 370px min-content;
+            grid-row-gap: 48px;
+            align-content: center;
+            justify-items: center;
+            justify-content: space-between;
+        }
+
+        &-title {
+            grid-column: 1 / 5;
+            justify-self: center;
+            align-self: center;
+        }
+
+        &-btn {
+            grid-column: 1 / 5;
+            justify-self: end;
+            align-self: center;
+            background-color: transparent;
+            color: #fff;
+            border-color: #fff;
+        }
+    }
+
+    &__more-info {
+        background-color: #fff;
+        padding: 48px 0 150px 0;
+
+        .page-content-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 490px;
+            grid-column-gap: 64px;
+        }
+
+        &-description {
+            h5 {
+                color: $primary-300;
+                margin: 48px auto 24px 0;
+            }
+
+            ul {
+                list-style-image: url("../../../assets/icons/bullet.svg");
+                margin-left: 22px;
+            }
+
+            li {
+                margin: 24px auto 24px 0;
+            }
+
+            a {
+                text-decoration: underline;
+                color: $secondary-800;
+            }
+        }
+
+        &-media {
+            padding-top: 48px;
+        }
+
+        &-img {
+            width: 490px;
+            height: 130px;
+            border-radius: $img-bd-rad;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+    }
+}

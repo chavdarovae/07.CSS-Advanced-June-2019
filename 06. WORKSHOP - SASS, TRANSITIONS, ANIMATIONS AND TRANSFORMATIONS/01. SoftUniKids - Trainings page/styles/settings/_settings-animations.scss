@@ -1,0 +1,20 @@
+@keyframes gray-to-secondary {
+  0% {
+    color: $gray-700;
+  }
+
+  100% {
+    color: $secondary-color;
+  }
+}
+
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,14 @@
+.c-program {
+  text-align: center;
+  margin-bottom: 116px;
+}
+
+.c-program__info {
+  margin: 96px auto 64px auto;
+  max-width: 850px;
+}
+
+.c-program__info h1 {
+  color: #41BEAD;
+  margin-bottom: 24px;
+}

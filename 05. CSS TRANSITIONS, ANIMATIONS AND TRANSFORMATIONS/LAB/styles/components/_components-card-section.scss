@@ -1,0 +1,15 @@
+.c-card__container {
+    margin: 50px 0;
+    
+    .cards__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 50px;
+        border-bottom: 10px dotted $primery-50;
+    
+        @include for-phone-only {
+            display: block;
+        }
+    }
+}
+

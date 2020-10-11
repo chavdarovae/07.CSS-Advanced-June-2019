@@ -1,0 +1,64 @@
+.block {
+  padding: 20px;
+  background-color: slategray;
+  border-radius: 5px;
+  font-size: 22px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper {
+  background-color: tomato;
+  padding: 10px;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  -ms-grid-columns: 1fr 300px;
+      grid-template-columns: 1fr 300px;
+      grid-template-areas: "header header" "main sidebar" "footer footer";
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+}
+
+main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+}
+
+aside {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: sidebar;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  min-height: 400px;
+}
+
+footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+}
